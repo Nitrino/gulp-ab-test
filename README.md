@@ -11,3 +11,13 @@
 ````bash
 gulp watch --test=A
 ````
+`main.styl`
+````stylus
+// @if TEST='A'
+float left
+// @endif
+
+// @if TEST='B'
+float right
+// @endif
+````
