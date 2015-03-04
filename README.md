@@ -1,8 +1,14 @@
-#gulp-ab-test
+#gulp-tachi
+> product improvement  
+> as manufacturing samurai sword  
+> required years
+
+Allows conveniently split up your code for AB testing
 
 ##Usage
+
 ````js
-  var abTest = require('gulp-ab-test');
+  var abTest = require('gulp-tachi');
 
 
   gulp.task('ab-test', function() {
