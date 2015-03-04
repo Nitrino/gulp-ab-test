@@ -2,6 +2,9 @@
 
 ##Usage
 ````js
+  var abTest = require('gulp-ab-test');
+
+
   gulp.task('ab-test', function() {
   gulp.src('./app/**/*.*')
     .pipe(abTest({context: { TEST: gulp.env.test}}))
