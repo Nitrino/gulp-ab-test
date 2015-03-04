@@ -11,7 +11,7 @@ module.exports = function (options) {
     var contents, extension;
 
     if (file.isNull()) return callback(null, file);
-    if (file.isStream()) return callback(new Error("gulp-preprocess: Streaming not supported"));
+    if (file.isStream()) return callback(new Error("gulp-ab-test: Streaming not supported"));
 
     context.src = file.path;
     context.srcDir = opts.includeBase || path.dirname(file.path);
