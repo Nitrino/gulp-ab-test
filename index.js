@@ -10,13 +10,12 @@ module.exports = function (options) {
   function ppStream(file, callback) {
     var contents, extension;
 
-    // TODO: support streaming files
-    if (file.isNull()) return callback(null, file); // pass along
+    if (file.isNull()) return callback(null, file);
     if (file.isStream()) return callback(new Error("gulp-preprocess: Streaming not supported"));
 
     context.src = file.path;
     context.srcDir = opts.includeBase || path.dirname(file.path);
-    context.TEST = context.TEST || 'a';
+    context.TEST = context.TEST;
 
     extension = _.isEmpty(opts.extension) ? getExtension(context.src) : opts.extension;
 
