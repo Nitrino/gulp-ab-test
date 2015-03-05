@@ -30,10 +30,10 @@ Run:
 gulp watch --test=A
 ````
 
-##Example:
+##Examples:
+###`main.styl`
 
-Before:
-`main.styl`
+source:
 ````stylus
 // @if TEST='A'
 float left
@@ -43,12 +43,40 @@ float left
 float right
 // @endif
 ````
+
 Run:
 `gulp watch --test=A`
 
-After:
-
+compile:
 ````stylus
-`main.styl`
 float left
+````
+
+###`index.html`
+
+source:
+````html
+<head>
+  <title>
+    <!-- @if TEST='A' -->
+      Tittle for A test
+    <!-- @endif -->
+
+    <!-- @if TEST='B' -->
+      Tittle for B test
+    <!-- @endif -->
+  </title>
+</head>
+````
+
+Run:
+`gulp watch --test=B`
+
+compile:
+````html
+<head>
+  <title>
+    Tittle for B test
+  </title>
+</head>
 ````
