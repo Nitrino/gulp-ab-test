@@ -1,20 +1,32 @@
 {
-  "name": "ab-test",
-  "description": "ab tests service",
-  "version": "0.0.1",
-  "license": "MIT",
+  "name": "gulp-tachi",
+  "version": "0.1.0",
+  "description": "Easy way to AB testing",
+  "author": "Petr Stepchenko",
+  "main": "./index.js",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/Nitrino/gulp-tachi"
   },
-  "devDependencies": {
-
+  "bugs": {
+    "url": "https://github.com/Nitrino/gulp-tachi/issues"
   },
-  "author": "Petr Stepchenko",
-  "main": "index.js",
-  "engines": {
-    "node": ">=0.9.0"
-  },
+  "keywords": [
+    "ab",
+    "test",
+    "split",
+    "separation",
+    "gulpplugin",
+    "gulp-plugin",
+    "html",
+    "javascript",
+    "coffeescript",
+    "conditional",
+    "include",
+    "exclude",
+    "ifdef",
+    "ifndef"
+  ],
   "dependencies": {
     "lodash": "2.4.x",
     "map-stream": "0.1.x",
@@ -24,5 +36,7 @@
     "gulp-util": "2.2.x",
     "mocha": "*",
     "should": "*"
-  }
+  },
+  "analyze": true,
+  "license": "MIT"
 }
