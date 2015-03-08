@@ -20,6 +20,7 @@ module.exports = function (options) {
     extension = _.isEmpty(opts.extension) ? getExtension(context.src) : opts.extension;
 
     contents = file.contents.toString('utf8');
+    if (extension == 'slim') extension = 'cpp';
     contents = preproc.preprocess(contents, context, extension);
     file.contents = new Buffer(contents);
 
