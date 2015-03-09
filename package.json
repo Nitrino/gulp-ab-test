@@ -1,6 +1,6 @@
 {
   "name": "gulp-tachi",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Easy way to AB testing",
   "author": "Petr Stepchenko",
   "main": "./index.js",
