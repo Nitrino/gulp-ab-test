@@ -15,7 +15,6 @@ module.exports = function (options) {
 
     context.src = file.path;
     context.srcDir = opts.includeBase || path.dirname(file.path);
-    context.TEST = context.TEST;
 
     extension = _.isEmpty(opts.extension) ? getExtension(context.src) : opts.extension;
 
